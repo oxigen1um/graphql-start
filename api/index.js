@@ -7,7 +7,7 @@ const api = express();
 
 api.all('/graphql', graphqlMiddleware({
   schema: schema,
-  graphiq: true
+  graphiql: true
 }));
 
 module.exports = api;
