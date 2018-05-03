@@ -6,7 +6,7 @@ module.exports = buildSchema(`
       completed: Boolean!
     }
     
-    type Todo {
+    type Todo { 
       id: ID!
       title: String!
       completed: Boolean!
@@ -30,6 +30,7 @@ module.exports = buildSchema(`
     
     input TodoInput {
       title: String!
+      completed: Boolean = false
       steps: [StepInput]
     }
     
